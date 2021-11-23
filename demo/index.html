@@ -29,7 +29,8 @@
   <script>
     var canvas = document.getElementById('renderCanvas');
     var engine = new BABYLON.Engine(canvas, true);
-
+    window.engine = engine
+    window.Engine = BABYLON.Engine
     var createScene = function() {
       var scene = new BABYLON.Scene(engine);
       var camera = new BABYLON.FreeCamera('camera1', new BABYLON.Vector3(0, 5,-10), scene);
